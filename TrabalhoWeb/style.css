@@ -1,0 +1,304 @@
+/* Import google fontes */
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400&display=swap');
+
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*Class body da pagina 1 e da pagina 2 */
+
+.corpoPage1 {
+    height: 100vh;
+    background-color: #2E42DB;
+    background: -webkit-linear-gradient(to right, #44DBC0, #2E42DB);
+    background: linear-gradient(to right, #44DBC0, #2E42DB);
+    display: flex;
+
+
+}
+
+.corpoPage2 {
+    box-sizing: border-box;
+    background-color: #2E42DB;
+    background: -webkit-linear-gradient(to right, #44DBC0, #2E42DB);
+    background: linear-gradient(to right, #44DBC0, #2E42DB);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Lato';
+    margin: 0 0 40px 0;
+}
+
+/*fim body das paginas */
+
+
+/*Head */
+
+.imagemPikachu {
+    padding: 20px;
+    height: 80px;
+    width: 100px;
+    position: absolute;
+
+}
+
+
+/* Corpo da pagina 1 */
+
+.apresentacao {
+    margin: 25% 20%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.conteudo {
+    width: 700px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+
+}
+
+.tituloParagrafo {
+    font-size: 40px;
+    font-family: 'Krona One', sans-serif;
+    display: flex;
+    margin: 100px;
+    margin: 10% 0%;
+}
+
+.fonteTexto {
+    font-size: 26px;
+    font-family: 'Montserra', sans-serif;
+    display: flex;
+}
+
+/* Estilo do botão */
+
+.botao {
+
+    font-family: 'Krona One', sans-serif;
+    width: 300px;
+    border-radius: 16px;
+    text-align: center;
+    font-size: 24px;
+    padding: 30px;
+    background-color: #DB9539;
+    color: #000000;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+
+}
+
+.botao:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+
+.margemBotao {
+    margin: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/*Tamanho da imagem page 1 */
+
+.tamanhoImagem {
+    width: 500px;
+    height: 520px;
+}
+
+/* FIM PAGINA 1 
+
+  INICIO PAGINA 2 */
+
+/* Confis Pre loader */
+
+#loader {
+  position: fixed;
+  z-index: 9999;
+  width: 100%;
+  height: 100%;
+  background-color:rgb(0, 0, 0)f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 600px;
+}
+
+#loader img {
+    width: 500px; /* ou qualquer tamanho que desejar */
+    height: 300px; /* ou qualquer tamanho que desejar */
+  }
+
+  .hidden {
+    display: none;
+  }
+
+
+.centralizacao {
+    padding: center;
+    margin: 30px 780px;
+    font-size: 40px;
+    font-family: 'Krona one', sans-serif;
+}
+
+.caixaFlutuante {
+    background-color: #001F61;
+    border-radius: 10px 10px 0 0;
+    color: #fff;
+    font-family: 'Muli';
+    padding: 7px 15px;
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.caixaFlutuante b {
+    color: #FF7500;
+}
+
+.caixaFlutuante p {
+    color: #FF7500;
+    font-family: 'Krona one', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+
+}
+
+
+/* Container onde fica nome e imagem do pokemon */
+
+
+.containerPokemon {
+    height: 15vh;
+    display: inline-block;
+    justify-content: flex-start;
+    margin: 0 auto;
+    max-width: 1200px;
+    background-color: #eee;
+    border-radius: 20px;
+    box-shadow: 0 3px 15px rgba(100, 100, 100, 0.5);
+    margin: 10px;
+    padding: 20px;
+    width: 150px;
+    height: 250px;
+    text-align: center;
+
+}
+
+
+.containerPokemon img {
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius: 50%;
+    width: 150px;
+    height: 140px;
+    text-align: center;
+
+}
+
+.containerPokemon img {
+    margin-top: 20px;
+    max-width: 90%;
+}
+
+.containerPokemon .numeroPokemon {
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    font-size: 0.8em;
+    padding: 5px 10px;
+    margin: 10px 0 10px;
+}
+
+.containerPokemon .nomePokemon {
+    margin: 10px 0 7px;
+    letter-spacing: 1px;
+    font-size: 22px;
+}
+
+.containerPokemon .info {
+    margin-top: 8px;
+
+}
+
+/* Define as cores do container do pokemon pelo tipo */
+.type-fire {
+    background-color: #ffd2bb;
+}
+
+.type-grass {
+    background-color: #DEFDE0;
+}
+
+.type-electric {
+    background-color: #f8e895;
+}
+
+.type-water {
+    background-color: #8ddbff;
+}
+
+.type-ground {
+    background-color: #eec49a;
+}
+
+.type-rock {
+    background-color: #d5d5d4;
+}
+
+.type-fairy {
+    background-color: #f6c3ff;
+}
+
+.type-poison {
+    background-color: #c97eeb;
+}
+
+.type-bug {
+    background-color: #f8d5a3;
+}
+
+.type-dragon {
+    background-color: #97b3e6;
+}
+
+.type-psychic {
+    background-color: #aaaa92;
+}
+
+.type-flying {
+    background-color: #f5f5f5;
+}
+
+.type-fighting {
+    background-color: #e6e0d4;
+}
+
+.type-normal {
+    background-color: #f5f5f5;
+}
+
+.type-ice {
+    background-color: #69e4e6;
+}
+
+.type-dark {
+    background-color: #999999;
+}
+
+.type-steel {
+    background-color: #7fa5b5;
+}
+
+.type-ghost {
+    background-color: #9c8888;
+}
